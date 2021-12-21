@@ -1,0 +1,6 @@
+.pnpm*
+pnpm-*.*
+node_modules
+dist
+.idea
+coverage
