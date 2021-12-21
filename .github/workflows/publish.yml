@@ -23,6 +23,6 @@ jobs:
 #          path: ~/.pnpm-store
 #          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
 #      - run: pnpm install
-      - uses: JS-DevTools/npm-publish@v1
+      - run: npm publish
         env:
           token: ${{ secrets.NPM_TOKEN }}
