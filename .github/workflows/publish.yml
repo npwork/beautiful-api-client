@@ -1,5 +1,6 @@
 name: Release flow
 on:
+  page_build:
   release:
     types: # This configuration does not affect the page_build event above
       - created
