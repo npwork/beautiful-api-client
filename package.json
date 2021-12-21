@@ -1,6 +1,6 @@
 {
   "name": "beautiful-api-client",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "license": "MIT",
   "description": "Beautiful, type-safe REST API client for typescript",
   "author": "Nick Papirniy <nikolaspapirniywork@gmail.com>",
