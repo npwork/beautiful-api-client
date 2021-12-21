@@ -42,11 +42,17 @@ jobs:
       - uses: pnpm/action-setup@v2.0.1
         with:
           version: 6.20.3
+      - name: Cache .pnpm-store # From https://pnpm.io/continuous-integration
+        uses: actions/cache@v1
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
+      - run: pnpm install
       - name: "Automated Version Bump"
         id: version-bump
         uses: "phips28/gh-action-bump-version@v9.0.1"
         with:
-          tag-prefix: ''
+          tag-prefix: 'v'
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_HUB_TOKEN }}
       - uses: actions/setup-node@v2
