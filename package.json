@@ -23,9 +23,7 @@
     "format": "prettier --config .prettierrc '{src,test}/**/*.ts' --write",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "make-badges": "istanbul-badges-readme",
-    "prepare": "husky install",
-    "prepublishOnly": "yarn run lint"
+    "make-badges": "istanbul-badges-readme"
   },
   "dependencies": {
     "axios": "^0.24.0",
