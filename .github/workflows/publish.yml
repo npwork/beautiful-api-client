@@ -1,8 +1,8 @@
 name: Release flow
 on:
   release:
-    types: [created]
-
+    types: # This configuration does not affect the page_build event above
+      - created
 jobs:
   publish:
     name: 📦 Publish 📦
