@@ -6,7 +6,7 @@ tslint.json
 jest.config.js
 coverage
 response-samples
-package-lock.json
+pnpm-lock.json
 TODO.txt
 yarn-error.log
 commitlint.config.js
