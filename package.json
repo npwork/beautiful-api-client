@@ -45,7 +45,7 @@
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-unused-imports": "2.0.0",
-    "express": "4.17.2",
+    "express": "4.18.1",
     "husky": "7.0.4",
     "istanbul-badges-readme": "1.8.1",
     "jest": "27.4.5",
